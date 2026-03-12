@@ -1,18 +1,17 @@
-import Header from "./Header";
-import Footer from "./Footer";
+
+import BagSummary from "../components/Bagsummary";
 
 const Bag = () => {
   return (
-    <>
-      <Header />
+
       <main>
         <div className="bag-page">
           <div className="bag-items-container"></div>
-          <div className="bag-summary"></div>
+          <BagSummary/>
+          
         </div>
       </main>
-      <Footer />
-    </>
+  
   );
 };
 export default Bag;
