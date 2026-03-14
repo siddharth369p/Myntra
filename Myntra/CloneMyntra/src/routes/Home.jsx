@@ -1,27 +1,19 @@
- import HomeItem from "../components/HomeItem"
-const Home=()=>{
+ import HomeItem from "../components/HomeItem";
+ import{useSelector}from"react-redux";
 
- const item = {
-    id: "008",
-    image: "images/8.jpg",
-    company: "Nivea",
-    item_name: "Men Fresh Deodrant 150ml",
-    original_price: 285,
-    current_price: 142,
-    discount_percentage: 50,
-    return_period: 14,
-    delivery_date: "10 Oct 2023",
-    rating: {
-      stars: 4.2,
-      count: 5200,
-    },
-  }
+const Home=()=>{
+      const items=useSelector(state=>state.items);
+     
+     
+      
+  
 
   return (
   <>
    <main>
         <div className="items-container" />
-        <HomeItem item={item} />
+        {items.map(item=> <HomeItem key={item.id} item={item} />)}
+       
       </main>
   </>
   )

@@ -231,14 +231,24 @@ header {
     text-align: end;
     padding: 15px;
 }
-
-.items-container {
+.category-items, .items-container {
     width: 80%;
-    margin: 40px 10%;
+    margin: 50px 10%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+
 }
 .item-container {
     width: 250px;
     margin: 10px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+}
+
+.item-container:hover{
+    transform: translateY(-5px);
+    box-shadow:0 8px 20px rgba(0,0,0,0.15);
 }
 .item-image {
     width: 100%;

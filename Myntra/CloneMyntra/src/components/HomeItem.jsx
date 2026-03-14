@@ -19,6 +19,7 @@ const HomeItem = ({ item }) => {
           Add to Bag
         </button>
       </div>
+     
     </>
   );
 };

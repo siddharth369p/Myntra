@@ -1,4 +1,4 @@
-const items = [
+const Default= [
     {
         id: '001',
         image: 'images/1.jpg',
@@ -118,3 +118,5 @@ const items = [
         },
     }
 ];
+
+export default Default;
